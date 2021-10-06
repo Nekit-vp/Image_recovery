@@ -84,7 +84,7 @@ if __name__ == '__main__':
         cv2.imshow(win, res)
 
 
-    cv2.namedWindow(win)
+    cv2.namedWindow(win, cv2.WINDOW_AUTOSIZE)
     cv2.namedWindow('psf', 0)
     cv2.createTrackbar('angle', win, 135, 180, update)
     cv2.createTrackbar('d', win, 22, 50, update)
